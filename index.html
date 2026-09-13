@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A personal profile and selected work."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2307111f'/%3E%3Cpath d='M17 39.5 30.5 17h8L25 47h-8l6.4-7.5Z' fill='%236ee7cf'/%3E%3Ccircle cx='45' cy='40' r='5' fill='%239cb3ff'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="profile.js"></script>
+    <script defer src="script.js"></script>
+    <title>Your Name | Profile</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" data-short-name>YN</span>
+        <span data-name>Your Name</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal profile <span aria-hidden="true">•</span> 2026</p>
+          <h1 id="hero-heading" data-headline>
+            Curiosity turned into <em>useful work.</em>
+          </h1>
+          <p class="hero-intro" data-intro>
+            A thoughtful home for ideas, projects, and the next question worth pursuing.
+          </p>
+
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button button-primary" data-linkedin hidden target="_blank" rel="noreferrer">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary" data-email hidden>
+              Email me <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="glance-card" aria-label="At a glance">
+          <div class="glance-topline">
+            <span>AT A GLANCE</span>
+            <span class="status"><i></i> Open to connect</span>
+          </div>
+          <div class="portrait-placeholder" aria-hidden="true">
+            <span data-short-name>YN</span>
+            <i></i><b></b>
+          </div>
+          <dl class="quick-facts" id="quick-facts"></dl>
+        </aside>
+      </section>
+
+      <section class="about section-grid" id="about" aria-labelledby="about-heading">
+        <div class="section-label">
+          <span>01</span>
+          <p>About</p>
+        </div>
+        <div class="section-body">
+          <h2 id="about-heading" data-about-title>Thoughtful by default. Practical on purpose.</h2>
+          <p class="large-copy" data-about>
+            I am interested in the work behind meaningful progress: asking better questions, learning deeply, and turning what I find into something people can use.
+          </p>
+          <div class="availability-note">
+            <span class="mini-orb" aria-hidden="true"></span>
+            <p data-availability>Available for good conversations, collaborative ideas, and opportunities to keep learning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-heading">
+        <div class="work-heading">
+          <div class="section-label">
+            <span>02</span>
+            <p>Selected focus</p>
+          </div>
+          <h2 id="work-heading">A few things I care about.</h2>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="principles" aria-labelledby="principles-heading">
+        <div class="principles-copy">
+          <p class="eyebrow">How I work</p>
+          <h2 id="principles-heading">Make it clear.<br />Make it count.</h2>
+        </div>
+        <ol class="principle-list" id="principle-list"></ol>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div>
+          <p class="eyebrow">03 <span aria-hidden="true">/</span> Contact</p>
+          <h2 id="contact-heading">Let’s make the next conversation a good one.</h2>
+        </div>
+        <div class="contact-links" id="contact-links"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> <span data-name>Your Name</span></span>
+      <span>Designed to leave a clear impression.</span>
+    </footer>
+  </body>
+</html>
